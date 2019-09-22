@@ -10,6 +10,8 @@
   "dependencies": {
     "core-js": "^2.6.5",
     "fastclick": "^1.0.6",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3"
   },
@@ -27,7 +29,8 @@
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.40.2"
   },
   "eslintConfig": {
     "root": true,
