@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name:'HomeRecommend',
+  name: 'HomeRecommend',
   data () {
     return {
       recommendList: [{
@@ -24,17 +24,17 @@ export default {
         imgUrl: 'http://img1.qunarzz.com/sight/p0/1510/e1/e1c111149b76d49b90.img.jpg_200x200_66e41130.jpg',
         title: '大连圣亚海洋世界',
         desc: '浪漫大连首站，浪漫的海洋主题乐园'
-      },{
+      }, {
         id: '0002',
         imgUrl: 'http://img1.qunarzz.com/sight/p0/1510/e1/e1c111149b76d49b90.img.jpg_200x200_66e41130.jpg',
         title: '大连圣亚海洋世界',
         desc: '浪漫大连首站，浪漫的海洋主题乐园'
-      },{
+      }, {
         id: '0003',
         imgUrl: 'http://img1.qunarzz.com/sight/p0/1510/e1/e1c111149b76d49b90.img.jpg_200x200_66e41130.jpg',
         title: '大连圣亚海洋世界',
         desc: '浪漫大连首站，浪漫的海洋主题乐园'
-      },{
+      }, {
         id: '0004',
         imgUrl: 'http://img1.qunarzz.com/sight/p0/1510/e1/e1c111149b76d49b90.img.jpg_200x200_66e41130.jpg',
         title: '大连圣亚海洋世界',
@@ -71,7 +71,7 @@ export default {
       .item-desc
         line-height: .4rem
         color: #ccc
-        ellipsis() 
+        ellipsis()
       .item-button
         line-height: .44rem
         margin-top: .16rem
