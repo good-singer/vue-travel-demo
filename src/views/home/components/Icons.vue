@@ -1,6 +1,6 @@
 <template>
   <div class="icons">
-    <swiper>
+    <swiper :options="swiperOption">
       <swiper-slide v-for="(page, index) of pages" :key="index">
         <div
           class="icon"
@@ -21,55 +21,20 @@
 export default {
 
   name: 'HomeIcons',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      iconList: [{
-        id: '0001',
-        imgUrl: 'https://p1.meituan.net/travelcube/7264ce9c25de2e464e3acd996fe8ad362803.png',
-        desc: '景点门票'
-      }, {
-        id: '0002',
-        imgUrl: 'https://p1.meituan.net/travelcube/7264ce9c25de2e464e3acd996fe8ad362803.png',
-        desc: '滑雪季'
-      }, {
-        id: '0003',
-        imgUrl: 'https://p1.meituan.net/travelcube/7264ce9c25de2e464e3acd996fe8ad362803.png',
-        desc: '泡温泉'
-      }, {
-        id: '0004',
-        imgUrl: 'https://p1.meituan.net/travelcube/7264ce9c25de2e464e3acd996fe8ad362803.png',
-        desc: '动植物园'
-      }, {
-        id: '0005',
-        imgUrl: 'https://p1.meituan.net/travelcube/7264ce9c25de2e464e3acd996fe8ad362803.png',
-        desc: '美食'
-      }, {
-        id: '0006',
-        imgUrl: 'https://p1.meituan.net/travelcube/7264ce9c25de2e464e3acd996fe8ad362803.png',
-        desc: 'KTV'
-      }, {
-        id: '0007',
-        imgUrl: 'https://p1.meituan.net/travelcube/7264ce9c25de2e464e3acd996fe8ad362803.png',
-        desc: '景点门票'
-      }, {
-        id: '0008',
-        imgUrl: 'https://p1.meituan.net/travelcube/7264ce9c25de2e464e3acd996fe8ad362803.png',
-        desc: '滑雪季'
-      }, {
-        id: '0009',
-        imgUrl: 'https://p1.meituan.net/travelcube/7264ce9c25de2e464e3acd996fe8ad362803.png',
-        desc: '景点门票'
-      }, {
-        id: '0010',
-        imgUrl: 'https://p1.meituan.net/travelcube/7264ce9c25de2e464e3acd996fe8ad362803.png',
-        desc: '一日游'
-      }]
+      swiperOption: {
+        autoplay: false
+      }
     }
   },
   computed: {
     pages () {
       const pages = []
-      this.iconList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []
